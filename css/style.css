@@ -4,7 +4,12 @@
 	padding: 0;
 	outline: none;
 }
-html {height: 100%}
+
+html {
+
+	height: 100%
+}
+
 body {
 	width: 100%;
 	height: 100%;
@@ -14,16 +19,13 @@ body {
 	font-family: "Segoe UI", sans-serif;
 	line-height: 100%;
 }
-a {
 
+a {
 	color: #FFFFFF;
 	text-decoration: none;
 	transition: all.6s ease;
 	-moz-transition: all.6s ease;
-
 }
-
- 
 
 a:hover {
 	color: #62EDC7;
@@ -36,8 +38,7 @@ a:active{
 	color: blue;
 }
 /*  Selection Block */
-::selection {background: #62EDC7; color: #62EDC7}
-::-moz-selection {background: #E4BFBF; color: #FFFCFC}
+
 
 img {
 	max-width: 100%;
@@ -53,22 +54,8 @@ hr {
 	padding: 0;
 }
 
-
-
-.right {
-	float: right 
-}
-
-.left {
-	float: left 
-}
-.clear {
-	clear: both 
-}
-
-
 header, footer {
-width: 98%: 
+width: 98%:
 background-color: #fff;
 
 } 
@@ -83,42 +70,62 @@ header {
 #logo { 
 	margin-left:17%;
 	font-size: 100%;
-	 
 }
 
 .contact {
-     text-align: right;
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;
 	padding: 10px; 
 }
 
 .contact2 {
-	margin-right: -6%;
-    margin-left:  15% ;
- 
-	font-size: 100%;
-	font-family: Comic Sans MS, sans-serif;
-	 
+	margin-left: 580px;
+	padding: 5px;
+    margin-right: -575px;
+    font-size: 100%;
+	font-family: Comic Sans MS, sans-serif;	 
 }
 
 .mel
 {   
+	color: white;
 	font-weight: bold;
 	font-size: 3em;	 
 }
 
 a.linkMenu {	
-	padding: 20px;
+	padding: 10px;
 	font-weight: bold;
 	color:#62EDC7;
 }
 
-.SecondMenuButtons{
-	padding: 6px;
-	font-weight: bold;
-	color:#4C5250;
-	margin-left:1%;
+a.Menuitem {
+	font-family: Comic Sans MS, sans-serif;
+	font-size: 100%;
+   	margin-left: 330px;
+	display:inline-block;
+	box-sizing:border-box;
+	height:100%;
+	padding:0;
+	margin-right: -320px;
+	color:#0E0101;
+	transition:color ease-out .2s
+}
+ .Menuitem:hover {
+
+ 	color:#3CD1C8;
+ }
+
+ .Menuitem2 {
+ 	font-family: Comic Sans MS, sans-serif;
+	font-size: 100%;
+ 	margin-left: 330px;
+ 	color:#3CD1C8;
+ }
+
+ .Menuitem_value {
+vertical-align:middle;
+line-height:2
 }
 
 .cardstext {
@@ -131,8 +138,8 @@ a.linkMenu {
 	
 }
 
-.cardtext a:hover {
-	color:  #1E3E0F ;
+a.cardtext {
+	color:  #020301  ;
 }
 
 
@@ -143,35 +150,6 @@ a.linkMenu {
 	font-weight: bold;
 }
 
-
-input[type=text].field {
-	border-radius:  5px;
-	border: 2px solid silver;
-    padding: 5px;
-    margin-left: 20px;
-}
-
-input[type=text].field:focus {
-	border: 2px solid #E92A2A;
-}
-
-
- 
-/*
-#menu {
-	color: #666;
-	font-family: Comic Sans MS, sans-serif;
-	font-size: 1.7em;
-}
-
-#menu hr {
-	width: 600px;
-	max-width: 100%;
-	margin-top: 5px;
-	margin-bottom: 10px;
-} 
-*/
-
 #menuHrefs a {
 	border-radius: 4px;
 	margin-right: 2.5%;
@@ -180,6 +158,7 @@ input[type=text].field:focus {
 }
 
 #menuHrefs a:hover {
+
 	background-color: #F44747;
 }
 
@@ -193,12 +172,13 @@ input[type=text].field:focus {
 }
 
 #wrapper #articles {
-	 
+	color: black;
 	width: 65%;
 	margin-left: 16%;
 }
 
 #wrapper #articles article {
+
 	margin-bottom: 20px;
 	float: left;
 	height: 40%;
@@ -206,7 +186,7 @@ input[type=text].field:focus {
 	border: 1px solid silver;
 	box-sizing: border-box;
 	border-radius: 5px;
-	background-color: #fafafa;
+	background-color: #FEFEFE;
 	margin-right: 2%;
 	margin-left: 2%; 
 	min-height: 400px;
@@ -231,13 +211,13 @@ input[type=text].field:focus {
 #wrapper #articles article p{
 	width: 80%;
 	margin-left: 10%;
-	text-indent: 1.7 em;
-
+	text-indent: 1.7em;
 }
 
 #wrapper #articles article a{
-	padding: 10px 5px;
-	background-color: #ed7b7b
+	color: black;
+	padding: 12px 5px;
+	background-color: #291111;
 	margin-left: 10%;
 	border-radius: 5px;
 	margin-top: 10px;
@@ -247,12 +227,8 @@ input[type=text].field:focus {
 }
 
 #wrapper #articles article a:hover{
- 	background-color: #27FA59;
+ 	background-color: #114E1F;
 }
-
-/*Центральный блок */
-
-
 
 /* стили для футера */
 
@@ -276,7 +252,6 @@ input[type=text].field:focus {
 }
 
 footer{
-
 	border-top: 2px solid silver;
 	margin-top: 10px;
 	padding-bottom: 2%;
@@ -288,11 +263,23 @@ footer{
 	display: block;
 }
  
- 
+form {
+	width: 100%
+} 
 
-footer, #page-wrap:after {height: 100px}
+form input {
+    background: url(img/vk.jpg)    3px 1px;
+	margin-bottom: 15px;
+ 	width: 70%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+footer, #page-wrap:after {
+	height: 100px
+}
  
 #page-wrap {
-	min-height: 490%;
+	min-height: 4500px;
 	margin-bottom: -5%;
 }
