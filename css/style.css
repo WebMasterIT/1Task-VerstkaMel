@@ -11,6 +11,7 @@ html {
 }
 
 body {
+
 	width: 100%;
 	height: 100%;
 	color: #333;
@@ -68,27 +69,43 @@ header {
 	 
 }
 
-#logo { 
-	margin-left:17%;
-	font-size: 100%;
-}
-
 .contact {
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;
 	padding: 10px; 
 }
 
+.headerButtons {
+	display: flex;	
+}
+
+.rightHeaderButton {
+	margin-left: 32em;
+	display:  flex;
+ 	flex-flow: nowrap;
+}
+
+.leftHeaderButton {
+
+ 	margin-left: 20px;
+	display:  flex;	 
+}
+
+.leftHeaderButtonMel {
+	margin-left: 290px;
+	display:  flex;
+ 
+} 
+
 .contact2 {
-	margin-left: 580px;
 	padding: 5px;
-   	margin-right: -575px;
-        font-size: 100%;
+    font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;	 
 }
 
 .mel
 {   
+	margin: 5px;
 	color: white;
 	font-weight: bold;
 	font-size: 3em;	 
@@ -103,108 +120,130 @@ a.linkMenu {
 a.Menuitem {
 	font-family: Comic Sans MS, sans-serif;
 	font-size: 100%;
-   	margin-left: 300px;
-	display:inline-block;
+    margin:5px;
 	box-sizing:border-box;
-	padding:0;
-	margin-right: -290px;
 	color:#0E0101;
 	transition:color ease-out .2s
 }
+
+.MenuitemValue {
+	color: #62EDC7
+}
+
  .Menuitem:hover {
 
  	color:#3CD1C8;
  }
 
- .Menuitem2 {
+ .MenuitemBlog {
+
  	font-family: Comic Sans MS, sans-serif;
-	font-size: 100%;
- 	margin-left: 330px;
  	color:#3CD1C8;
  }
 
- .Menuitem_value {
-	vertical-align:middle;
-	line-height:2
+.link {
+
+     width: 300px; /* Ширина слоя */
+     height: 200px; /* Высота слоя */
+     background: #fc0; /* Цвет фона */
+}
+    
+.link a {
+     display: block; /* Ссылка как блочный элемент */
+     text-align: center; /* Выравнивание по центру */
+     height: 100%; /* Высота на весь слой */
+     color: #666; /* Цвет ссылки */
+ }
+
+ .HeadMenuRight {
+	
+	padding: 5px;
+    font-size: 100%;
+	font-family: Comic Sans MS, sans-serif;	 
+
 }
 
-.cardstext {
+.CardsText {
   
-	line-height: 24px;
-    display: table-cell; 
+	line-height: 25px;
+   
    	text-align: center;
 	font-size: 1.2em;
 	font-weight: bold;
 	
 }
 
-a.cardtext {
-	color:  #020301  ;
+a.CardText {
+	display: block;
+	height: 100%;
+	color: #020301;
 }
 
 
 .cardsblogs {
-	margin: 40%;
+
+	margin-top: 2%;
 	color: #FE4444;
 	font-size: 1em;
 	font-weight: bold;
 }
 
-#menuHrefs a {
-	border-radius: 4px;
-	margin-right: 2.5%;
-	margin-left: 1%; 
-	color: black;
+.menuHrefs {
+
+	padding-left: 16%;
+	flex-direction: row;
+	display: flex;
+	 
 }
 
-#menuHrefs a:hover {
-
-	background-color: #F44747;
-}
+ 
 
 /* Основные стили для сайта */
 
 #wrapper {
-
+	
 	width: 100%;
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
 
 #wrapper #articles {
+	align-items: baseline;
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
 	color: black;
 	width: 70%;
+ 
+
 	margin-left: 16%;
 }
 
 #wrapper #articles article {
-	float: left;
-	/*margin-bottom: 20px;*/
-	/*height: 50%;*/
-	/*width: 21%; */
+	 word-spacing: normal;
+	width: 70%;
+	height: 100%;
+
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
 	border: 1px solid silver;
-	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: #FEFEFE;
-	  
-	/*margin-left: 2%;*/ 
-	min-height: 400px;
+	 
 }
 	@media (min-width: 700px)  {
 	#wrapper #articles article {
 	width: 21%;	
 	margin-right: 2%;
-}
-}
-
+}}
 	@media (max-width: 699px) {
 	#wrapper #articles article {
 	width: 96%;
-
 	margin-left: 2%; 
+}}
 
-}
-}
+
 #wrapper #articles article img{
 	width: 100%;
 	height: 200px;
@@ -213,60 +252,67 @@ a.cardtext {
 	margin-bottom: 10px;
 }
 
-
+/*
 #wrapper #articles article a{
+	display: block;
 	color: black;
 	padding: 12px 5px;
 	background-color: #291111;
 	margin-left: 10%;
 	border-radius: 5px;
 	margin-top: 10px;
-	float: left;
 	line-height: 10px;
 	margin-bottom: 10px;
 }
-
+*/
  
 
 /* стили для футера */
 
 #footerblock {
- 	padding: 2% 0;
-	width: 100%; 
+
+ 	padding: 3% 0;
 	border-bottom: 2px solid silver;
 	border-top: 2px solid silver;
 	margin: 20px 0;
-	background: url(img/pic4.jpg)   center 0; 
+	background: url(../img/pic5.jpg) repeat-x ; 
 	height: 200px;
 }
 
 #footerblock_in {
 	line-height: 25px;
 	text-align: center;
-	padding: 1%;
 	height: 100px;
 	border-radius: 7px;
 	width: 500px;
 }
 
 footer{
+
 	border-top: 2px solid silver;
 	margin-top: 10px;
 	padding-bottom: 3%;
 }
-
-
-#page-wrap: after{
-	content: "";
-	display: block;
-}
  
+.moreArticles {
+	display: flex;
+
+}
+
+.moreArticlesButton {
+
+	 
+	color:#62EDC7;
+	border-radius: 50px;
+
+}
+
 form {
 	width: 100%
 } 
 
 form input {
-    background: url(img/vk.jpg)   3px 1px;
+   
 	margin-bottom: 15px;
  	width: 70%;
     padding: 10px;
@@ -277,7 +323,8 @@ footer, #page-wrap:after {
 	height: 100px
 }
  
-#page-wrap {
-	min-height: 4200px;
-	margin-bottom: -2%;
+
+.ContactInfo {
+	display: flex;
+
 }
