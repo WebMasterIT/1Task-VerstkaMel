@@ -208,6 +208,7 @@ a.CardText {
 }
 
 #wrapper #articles {
+
 	align-items: baseline;
 	justify-content: space-around;
 	display: flex;
@@ -223,7 +224,7 @@ a.CardText {
 	 word-spacing: normal;
 	width: 70%;
 	height: 100%;
-
+ 	 
 	justify-content: space-around;
 	display: flex;
 	flex-wrap: wrap;
@@ -270,10 +271,7 @@ a.CardText {
 /* стили для футера */
 
 #footerblock {
-
  	padding: 3% 0;
-	border-bottom: 2px solid silver;
-	border-top: 2px solid silver;
 	margin: 20px 0;
 	background: url(../img/pic5.jpg) repeat-x ; 
 	height: 200px;
@@ -289,7 +287,7 @@ a.CardText {
 
 footer{
 
-	border-top: 2px solid silver;
+	 
 	margin-top: 10px;
 	padding-bottom: 3%;
 }
@@ -322,9 +320,20 @@ form input {
 footer, #page-wrap:after {
 	height: 100px
 }
+
+.downButton {
+	width: 210px;
+	height: 55px;
+	background: #20B2AA; /* Цвет фона */
+	color: #fff; /* Цвет текста */
+	border-radius: 40px; /* Уголки */
+	font-size: 100%;
+	font-family: Comic Sans MS, sans-serif;
+	padding: 5px;
+}
  
 
 .ContactInfo {
 	display: flex;
-
+	height: 300%;
 }
