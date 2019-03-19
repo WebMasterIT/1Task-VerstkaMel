@@ -35,41 +35,20 @@ a:hover {
 	-moz-transition: all.6s ease;
 }
 
-a:active{
-	color: blue;
-}
-
 /*  Selection Block */
-
-
-img {
-	max-width: 100%;
-	height: auto;
-	 
-}
-
-hr {
-	display: block;
-	border: 0;
-	height: 1px;
-	border-top: 1px solid #ccc;
-	padding: 0;
-}
-
+ 
 header, footer {
-	width: 98%:
+	width: 100%:
 	background-color: #fff;
-
 } 
 
 header {
 	background: black;
 	border-bottom: 2px solid silver;
 	padding: 1%;
-	 
 }
 
-.contact {
+.navigationButton {
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;
 	padding: 10px; 
@@ -79,31 +58,25 @@ header {
 	display: flex;	
 }
 
-.rightHeaderButton {
-	margin-left: 32em;
+.autorisationHeaderButton {
+	margin-left: 38em;
 	display:  flex;
  	flex-flow: nowrap;
 }
 
-.leftHeaderButton {
+.navigationHeaderButton {
 
  	margin-left: 20px;
 	display:  flex;	 
 }
 
-.leftHeaderButtonMel {
+.navigationButtonMel {
 	margin-left: 290px;
 	display:  flex;
  
 } 
 
-.contact2 {
-	padding: 5px;
-    font-size: 100%;
-	font-family: Comic Sans MS, sans-serif;	 
-}
-
-.mel
+.melButton
 {   
 	margin: 5px;
 	color: white;
@@ -111,11 +84,6 @@ header {
 	font-size: 3em;	 
 }
 
-a.linkMenu {	
-	padding: 10px;
-	font-weight: bold;
-	color:#62EDC7;
-}
 
 a.Menuitem {
 	font-family: Comic Sans MS, sans-serif;
@@ -130,23 +98,11 @@ a.Menuitem {
 	color: #62EDC7
 }
 
- .Menuitem:hover {
+.Menuitem:hover {
 
  	color:#3CD1C8;
- }
-
- .MenuitemBlog {
-
- 	font-family: Comic Sans MS, sans-serif;
- 	color:#3CD1C8;
- }
-
-.link {
-
-     width: 300px; /* Ширина слоя */
-     height: 200px; /* Высота слоя */
-     background: #fc0; /* Цвет фона */
 }
+
     
 .link a {
      display: block; /* Ссылка как блочный элемент */
@@ -155,15 +111,8 @@ a.Menuitem {
      color: #666; /* Цвет ссылки */
  }
 
- .HeadMenuRight {
-	
-	padding: 5px;
-    font-size: 100%;
-	font-family: Comic Sans MS, sans-serif;	 
 
-}
-
-.CardsText {
+.cardsText {
   
 	line-height: 25px;
    
@@ -173,14 +122,8 @@ a.Menuitem {
 	
 }
 
-a.CardText {
-	display: block;
-	height: 100%;
-	color: #020301;
-}
 
-
-.cardsblogs {
+.cardsBlogs {
 
 	margin-top: 2%;
 	color: #FE4444;
@@ -221,10 +164,10 @@ a.CardText {
 }
 
 #wrapper #articles article {
-	 word-spacing: normal;
+	margin-bottom: 40px;
+	word-spacing: normal;
 	width: 70%;
-	height: 100%;
- 	 
+	height: 400px;
 	justify-content: space-around;
 	display: flex;
 	flex-wrap: wrap;
@@ -251,58 +194,29 @@ a.CardText {
 	border-radius: 5px 5px 0px 0px;
 	border-bottom: 1px solid silver;
 	margin-bottom: 10px;
-}
-
-/*
-#wrapper #articles article a{
-	display: block;
-	color: black;
-	padding: 12px 5px;
-	background-color: #291111;
-	margin-left: 10%;
-	border-radius: 5px;
-	margin-top: 10px;
-	line-height: 10px;
-	margin-bottom: 10px;
-}
-*/
- 
+} 
 
 /* стили для футера */
 
-#footerblock {
+#footerBlock {
+	color: white;
+	clear: both;
  	padding: 3% 0;
 	margin: 20px 0;
-	background: url(../img/pic5.jpg) repeat-x ; 
+	background: url(../img/background.jpg) center/cover no-repeat ; 
 	height: 200px;
 }
 
-#footerblock_in {
+#footerBlockIn {
 	line-height: 25px;
-	text-align: center;
-	height: 100px;
-	border-radius: 7px;
-	width: 500px;
+	width: 470px;
 }
 
-footer{
-
-	 
-	margin-top: 10px;
-	padding-bottom: 3%;
-}
- 
-.moreArticles {
-	display: flex;
-
-}
-
-.moreArticlesButton {
-
-	 
-	color:#62EDC7;
-	border-radius: 50px;
-
+.formDescription {
+	margin-bottom: 110px;
+	width: 430px;
+    font: 14px/20px Proxima,sans-serif;
+    opacity: .8;
 }
 
 form {
@@ -310,18 +224,18 @@ form {
 } 
 
 form input {
-   
 	margin-bottom: 15px;
- 	width: 70%;
+ 	width: 90%;
     padding: 10px;
     margin-left: 15px;
 }
 
-footer, #page-wrap:after {
-	height: 100px
+input:focus {
+  border: 2px solid #47B3AC;
 }
 
-.downButton {
+.moreArticlesButton {
+	
 	width: 210px;
 	height: 55px;
 	background: #20B2AA; /* Цвет фона */
@@ -333,7 +247,77 @@ footer, #page-wrap:after {
 }
  
 
-.ContactInfo {
-	display: flex;
-	height: 300%;
+.footerInfo {
+
+   
+    min-height: 300px;  
+    padding: 30px;
+    text-align: center;
+    background-color: #1C1C1C;  
+}
+
+.footerRubrics {
+	font-size: 95%;
+	font-weight:bold;
+	margin: 10px;
+	margin-bottom: 27px;
+}
+
+.footerCategories {
+	font-family: 
+	line-height: inherit;
+}
+
+.footernavigation {
+	margin-left: 10px;
+	font-size: 100%; 
+}
+
+.footerLinks {
+	max-width: 800px;
+    margin: 0 auto 31px;
+}
+
+.footerItems {
+	text-transform: uppercase;
+	color: #ECECEC;
+	font-family: 600 15px Proxima,sans-serif; 
+	margin-right: 10px;
+	transition:color ease-out .2s
+	vertical-align: middle;
+    line-height: 2;
+    text-align: center;
+    background-color: #1C1C1C;  
+}
+
+.footerItemsBlogs {
+	color: #50EBD3;
+}
+
+.footerCopyright {
+	margin-top: 20px;
+	font: 14px/24px roboto-regular,Arial,sans-serif;
+	display: inline-block;
+    color: #fff;
+}
+
+.footerLink {
+	line-height: 1.4;
+	display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #888;
+}
+
+.footerSocial {
+	display: inline-block;
+	margin: 10px;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.footerIcons {
+
+	padding: 8px;
+	font-size: 100%;
 }
