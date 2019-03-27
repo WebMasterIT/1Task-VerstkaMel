@@ -1,106 +1,130 @@
 @charset "utf-8";
 *  {
-	margin: 0;
-	padding: 0;
-	outline: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
 html {
 
-	height: 100%
+    height: 100%
 }
 
 body {
-
-	width: 100%;
-	height: 100%;
-	color: #333;
-	background: #f7f7f7;
-	font-size: 1em;
-	font-family: "Segoe UI", sans-serif;
-	line-height: 100%;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: Proxima, sans-serif;
+    line-height: 100%;
 }
 
 a {
-	color: #FFFFFF;
-	text-decoration: none;
-	transition: all.6s ease;
-	-moz-transition: all.6s ease;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
 }
 
 a:hover {
-	color: #62EDC7;
-	text-decoration: none;
-	transition: all.6s ease;
-	-moz-transition: all.6s ease;
+    color: #62EDC7;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
 }
 
 /*  Selection Block */
  
 header, footer {
-	width: 100%:
-	background-color: #fff;
+     
+    background-color: #fff;
 } 
 
 header {
-	background: black;
-	border-bottom: 2px solid silver;
-	padding: 1%;
+    position: relative;
+    margin: 0 auto;
+    background: black;
+    padding: 1%;
 }
 
 .navigationButton {
-	font-size: 100%;
-	font-family: Comic Sans MS, sans-serif;
-	padding: 10px; 
+    font-weight: 600;
+    font: 14px Proxima,sans-serif;
+    padding: 11px; 
+}
+
+.headerButtonExit {
+    font-size: 95%;
+    font:  14px Proxima,sans-serif;
+    padding: 10px; 
+    background: #20B2AA; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    border-radius: 20px; /* Уголки */
 }
 
 .headerButtons {
-	display: flex;	
+    display: flex;  
 }
 
 .autorisationHeaderButton {
-	margin-left: 38em;
-	display:  flex;
- 	flex-flow: nowrap;
+    font-weight: 600;
+    margin-left: 38em;
+    display:  flex;
+    flex-flow: nowrap;
 }
 
 .navigationHeaderButton {
-
- 	margin-left: 20px;
-	display:  flex;	 
+    font-weight: 600;
+    margin-left: 20px;
+    display:  flex;  
 }
 
 .navigationButtonMel {
-	margin-left: 290px;
-	display:  flex;
+    margin-left: 290px;
+    display:  flex;
  
 } 
 
 .melButton
 {   
-	margin: 5px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;	 
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;  
 }
 
+.use {
+    display: inline;
+    opacity: 0.6;
+    font-size: 13px;
+    margin: 4px;
+    
+}
+
+.articleInfo {
+    margin-left: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    
+}
 
 a.Menuitem {
-	font-family: Comic Sans MS, sans-serif;
-	font-size: 100%;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 100%;
     margin:5px;
-	box-sizing:border-box;
-	color:#0E0101;
-	transition:color ease-out .2s
+    box-sizing:border-box;
+    color:#0E0101;
+    transition:color ease-out .2s
 }
 
 .MenuitemValue {
-	color: #62EDC7
+    color: #62EDC7
 }
 
 .Menuitem:hover {
 
- 	color:#3CD1C8;
+    color:#3CD1C8;
 }
 
     
@@ -114,29 +138,32 @@ a.Menuitem {
 
 .cardsText {
   
-	line-height: 25px;
-   
-   	text-align: center;
-	font-size: 1.2em;
-	font-weight: bold;
-	
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 14px Proxima, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    
 }
 
 
 .cardsBlogs {
-
-	margin-top: 2%;
-	color: #FE4444;
-	font-size: 1em;
-	font-weight: bold;
+   
+    /* margin-bottom: 10px; */ 
+    text-transform: uppercase;
+    margin-top: 2%;
+    color: #FE4444;
+    font-weight: 800;
+    font-size: 11px;
 }
 
 .menuHrefs {
 
-	padding-left: 16%;
-	flex-direction: row;
-	display: flex;
-	 
+    padding-left: 16%;
+    flex-direction: row;
+    display: flex;
+     
 }
 
  
@@ -144,88 +171,89 @@ a.Menuitem {
 /* Основные стили для сайта */
 
 #wrapper {
-	
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 10px;
+    
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 #wrapper #articles {
 
-	align-items: baseline;
-	justify-content: space-around;
-	display: flex;
-	flex-wrap: wrap;
-	color: black;
-	width: 70%;
+    align-items: baseline;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    width: 70%;
  
 
-	margin-left: 16%;
+    margin-left: 16%;
 }
 
 #wrapper #articles article {
-	margin-bottom: 40px;
-	word-spacing: normal;
-	width: 70%;
-	height: 400px;
-	justify-content: space-around;
-	display: flex;
-	flex-wrap: wrap;
-	border: 1px solid silver;
-	border-radius: 5px;
-	background-color: #FEFEFE;
-	 
+    margin-bottom: 40px;
+    word-spacing: normal;
+    width: 70%;
+    height: 400px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: #FEFEFE;
+     
 }
-	@media (min-width: 700px)  {
-	#wrapper #articles article {
-	width: 21%;	
-	margin-right: 2%;
+    @media (min-width: 700px)  {
+    #wrapper #articles article {
+    width: 21%; 
+    margin-right: 2%;
 }}
-	@media (max-width: 699px) {
-	#wrapper #articles article {
-	width: 96%;
-	margin-left: 2%; 
+    @media (max-width: 699px) {
+    #wrapper #articles article {
+    width: 96%;
+    margin-left: 2%; 
 }}
 
 
 #wrapper #articles article img{
-	width: 100%;
-	height: 200px;
-	border-radius: 5px 5px 0px 0px;
-	border-bottom: 1px solid silver;
-	margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
 } 
 
 /* стили для футера */
 
 #footerBlock {
-	color: white;
-	clear: both;
- 	padding: 3% 0;
-	margin: 20px 0;
-	background: url(../img/background.jpg) center/cover no-repeat ; 
-	height: 200px;
+    color: white;
+    clear: both;
+    padding: 3% 0;
+    margin: 20px 0;
+    background: url(../img/background.jpg) center/cover no-repeat ; 
+    height: 200px;
 }
 
 #footerBlockIn {
-	line-height: 25px;
-	width: 470px;
+    
+    line-height: 25px;
+    width: 470px;
 }
 
 .formDescription {
-	margin-bottom: 110px;
-	width: 430px;
+    margin-bottom: 110px;
+    width: 430px;
     font: 14px/20px Proxima,sans-serif;
     opacity: .8;
 }
 
 form {
-	width: 100%
+    width: 100%
 } 
 
 form input {
-	margin-bottom: 15px;
- 	width: 90%;
+    margin-bottom: 15px;
+    width: 90%;
     padding: 10px;
     margin-left: 15px;
 }
@@ -235,21 +263,20 @@ input:focus {
 }
 
 .moreArticlesButton {
-	
-	width: 210px;
-	height: 55px;
-	background: #20B2AA; /* Цвет фона */
-	color: #fff; /* Цвет текста */
-	border-radius: 40px; /* Уголки */
-	font-size: 100%;
-	font-family: Comic Sans MS, sans-serif;
-	padding: 5px;
+    
+    width: 210px;
+    height: 55px;
+    background: #20B2AA; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    border-radius: 40px; /* Уголки */
+    font-size: 100%;
+    font-family: Comic Sans MS, sans-serif;
+    padding: 5px;
 }
  
 
 .footerInfo {
-
-   
+    
     min-height: 300px;  
     padding: 30px;
     text-align: center;
@@ -257,67 +284,70 @@ input:focus {
 }
 
 .footerRubrics {
-	font-size: 95%;
-	font-weight:bold;
-	margin: 10px;
-	margin-bottom: 27px;
+
+    font-size: 95%;
+    font-weight:bold;
+    margin: 10px;
+    margin-bottom: 27px;
 }
 
 .footerCategories {
-	font-family: 
-	line-height: inherit;
+
+    line-height: inherit;
 }
 
 .footernavigation {
-	margin-left: 10px;
-	font-size: 100%; 
+    margin-left: 10px;
+    font-size: 100%; 
 }
 
 .footerLinks {
-	max-width: 800px;
+
+    max-width: 800px;
     margin: 0 auto 31px;
 }
 
 .footerItems {
-	text-transform: uppercase;
-	color: #ECECEC;
-	font-family: 600 15px Proxima,sans-serif; 
-	margin-right: 10px;
-	transition:color ease-out .2s
-	vertical-align: middle;
+    text-transform: uppercase;
+    color: #ECECEC;
+    font-family: 600 15px Proxima,sans-serif; 
+    margin-right: 10px;
+    transition:color ease-out .2s;
+    vertical-align: middle;
     line-height: 2;
     text-align: center;
     background-color: #1C1C1C;  
 }
 
 .footerItemsBlogs {
-	color: #50EBD3;
+    color: #50EBD3;
 }
 
 .footerCopyright {
-	margin-top: 20px;
-	font: 14px/24px roboto-regular,Arial,sans-serif;
-	display: inline-block;
+    margin-top: 20px;
+    font: 14px/24px roboto-regular,Arial,sans-serif;
+    display: inline-block;
     color: #fff;
 }
 
 .footerLink {
-	line-height: 1.4;
-	display: inline-block;
+    line-height: 1.4;
+    display: inline-block;
     margin-right: 10px;
     text-decoration: none;
     color: #888;
 }
 
 .footerSocial {
-	display: inline-block;
-	margin: 10px;
-	font-size: 30px;
-	margin-bottom: 20px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .footerIcons {
 
-	padding: 8px;
-	font-size: 100%;
+    padding: 8px;
+    font-size: 100%;
 }
+
