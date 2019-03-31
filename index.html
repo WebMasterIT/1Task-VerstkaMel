@@ -1,5 +1,5 @@
-<!DOCTYPE html lang="ru">
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="test,site, website" />
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блоги | «Мел». Полезное, понятное и удобное онлайн-медиа про образование и детей</title>
 </head>
 
@@ -17,12 +18,13 @@
 
     <header>
         <div class="headerButtons">
+            <div class="headerButtonsView">
             <div class="navigationButtonMel">
                 <span class="melButton"> <a href="index.html" title="На главную"> мел </a> </span>
             </div>
             <div class="navigationHeaderButton">
-                <span class="navigationButton"> <a href="about.html"> Тексты </a>
-                </span>
+                <div class="navigationButtonTexts"> <a href="about.html"> Тексты </a>
+                
                 <span class="navigationButton"> <a href="about.html"> Афиша </a>
                 </span>
                 <span class="navigationButton"> <a href="about.html"> Книги </a>
@@ -36,10 +38,12 @@
                     </a></span>
                 <span class="headerButtonExit"> <a href="auth.html"> ВХОД
                     </a> </span>
+                </div>
             </div>
     </header>
-    <br />
     <div class="menuHrefs">
+    	<div class="menuHrefsSpace">
+
         <a class="Menuitem" href="/blogs">
             ДО ШКОЛЫ
         </a>
@@ -67,6 +71,7 @@
         <a class="Menuitem" href="/blogs" data-id="8">
             <span class="MenuitemValue"> БЛОГИ </span>
         </a>
+        </div>
     </div>
     <div id="wrapper">
         <div id="articles">
@@ -503,9 +508,8 @@
             </article>
         </div>
     </div>
-    <div class="moreArticlesButton">
-        <span class="moreArticlesButtonSpan"> Больше статей
-        </span>
+    <div align="center" >
+        <button class="moreArticlesButton"> Больше статей </button>   
     </div>
     </div>
     </div>
