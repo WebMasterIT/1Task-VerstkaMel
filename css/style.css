@@ -23,19 +23,18 @@ a {
     color: #FFFFFF;
     text-decoration: none;
     transition: all.6s ease;
-    -moz-transition: all.6s ease;
 }
 
 a:hover {
     color: #62EDC7;
     text-decoration: none;
     transition: all.6s ease;
-    -moz-transition: all.6s ease;
 }
 
 /*  Selection Block */
  
 header, footer {
+    font-family: 'Merriweather', serif;
     background-color: #fff;
 } 
 
@@ -55,56 +54,47 @@ header {
 
 .headerButtonExit {
     font-size: 95%;
-    font:  14px Proxima,sans-serif;
     padding: 10px; 
     background: #20B2AA;  
     color: #fff;  
-    border-radius: 20px;  
+    border-radius: 30px;  
 }
 
-.headerButtonsView{
-   
-    margin-left: 350px;
-}
+ 
 
 .navigationButtonTexts {
-    font: 14px Proxima,sans-serif;
+    box-sizing: border-box;
     padding: 10px; 
-    border-bottom: 3px solid silver;
-    border-bottom-color: #2FF7D8;
-
+    border-bottom: 3px solid #2FF7D8;
 }    
     
 
 .headerButtons {
+    vertical-align: baseline;
     display: flex;
-    flex-flow: nowrap;
-    width: 100%; 
+    margin-left: 350px;
 }
 
  
 .autorisationHeaderButton {
-    font-weight: 600;
-    margin-left: 38em;
-    display:  flex;
-    flex-flow: nowrap;
+    margin-left: 540px;
+     
 }
 
 .navigationHeaderButton {
     margin-left: 20px;
-    display:  flex;  
+     display: flex;
 }
 
 .navigationButtonMel {
-    
-    width: 1 px; 
+    width: 100px; 
 } 
 
 .melButton {   
-    margin: 5px;
+     
     color: white;
     font-weight: bold;
-    font-size: 3em;  
+    font-size: 50px;  
 }
 
 .articleViwes {
@@ -153,10 +143,8 @@ a.Menuitem {
 
 .cardsText {
     line-height: 25px;
-    font-weight: 700;
-    font-size: 14px Proxima, sans-serif;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: bold;
     
 }
@@ -171,7 +159,6 @@ a.Menuitem {
 }
 
 .menuHrefs {
-    font-style: Proxima, sans-serif;
     padding-left: 16%;
     margin-right: 27px;
     display: inline-block;
@@ -185,13 +172,13 @@ a.Menuitem {
 
 #wrapper {
     width: 100%;
-    margin-top: 47px;
+    margin-top: 36px;
     margin-bottom: 36px;
 }
 
 #wrapper #articles {
     display: grid;
-    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-columns: repeat(4,277px);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     color: black;
@@ -210,7 +197,7 @@ a.Menuitem {
 
      
 }
-/*
+
     @media (min-width: 700px)  {
         #wrapper #articles article {
                  width: 280px; 
@@ -218,71 +205,10 @@ a.Menuitem {
 }}
     @media (max-width: 699px) {
         #wrapper #articles article {
-              width: 96%;
+              width: 280px;
               margin-left: 2%; 
 }}
 
-/* Smartphones (portrait and landscape) -----------  
-@media only screen 
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
-    #wrapper #articles article {
-              width: 96%;
-              margin-left: 2%; 
-}}
-/*
-/* Smartphones (landscape) ----------- 
-@media only screen
-and (min-width: 321px) {
-
-}
-
-/* Smartphones (portrait) ----------- 
-@media only screen
-and (max-width: 320px) {
-
-}
-
-/* iPads (portrait and landscape) ----------- 
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-  
-}
-
-/* iPads (landscape) -----------  
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: landscape) {
-  /* Styles 
-}
-
-/* iPads (portrait) -----------  
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait) {
- 
-}
-
-/* Desktops and laptops -----------  
-@media only screen
-and (min-width: 1224px) {
-  /* Styles  
-}
-
-/* Large screens ----------- 
-@media only screen
-and (min-width: 1824px) {
-  /* Styles 
-}
-
-/* iPhone 4 ----------- 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles 
-}
-*/
 #wrapper #articles article img{
     width: 100%;
     height: 220px;
@@ -330,6 +256,7 @@ input:focus {
 }
 
 .moreArticlesButton {
+    cursor: pointer;
     display: inline-block;
     border: none;
     height: 46px;
@@ -343,12 +270,7 @@ input:focus {
 
 }
 
-.moreArticlesButtonSpan {
-    vertical-align: middle;
-    
-}
  
-
 .footerInfo {
     min-height: 300px;  
     padding: 30px;
@@ -364,23 +286,26 @@ input:focus {
 }
 
 .footerCategories {
-    line-height: inherit;
+
+    display: inline-block;
+     
 }
 
 .footernavigation {
-    margin-left: 10px;
-    font-size: 100%; 
+     margin-left: 17px;
+    font-size: 90%; 
 }
 
 .footerLinks {
-    max-width: 800px;
+    font-family:  Arial,sans-serif;
+    font-size: 14px;
+    max-width: 670px;
     margin: 0 auto 31px;
 }
 
 .footerItems {
     text-transform: uppercase;
     color: #ECECEC;
-    font-family: 600 15px Proxima,sans-serif; 
     margin-right: 10px;
     transition:color ease-out .2s;
     vertical-align: middle;
@@ -394,13 +319,14 @@ input:focus {
 }
 
 .footerCopyright {
-    margin-top: 20px;
+    margin-top: 17px;
     font: 14px/24px roboto-regular,Arial,sans-serif;
     display: inline-block;
     color: #fff;
 }
 
 .footerLink {
+    
     line-height: 1.4;
     display: inline-block;
     margin-right: 10px;
@@ -409,10 +335,12 @@ input:focus {
 }
 
 .footerSocial {
+    margin-top: 20px;
     display: inline-block;
-    margin: 10px;
-    font-size: 30px;
-    margin-bottom: 20px;
+    /*margin-right:  25px;*/
+    margin-left: 25px;
+    font-size: 23px;
+    margin-bottom: 35px;
 }
 
 .footerIcons {
