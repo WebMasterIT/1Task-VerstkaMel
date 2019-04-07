@@ -5,11 +5,10 @@
     <meta name="keywords" content="test,site, website" />
     <meta name="title" content="Блоги | «Мел». Полезное, понятное и удобное онлайн-медиа про образование и детей">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блоги | «Мел». Полезное, понятное и удобное онлайн-медиа про образование и детей</title>
 </head>
@@ -22,23 +21,22 @@
             <div class="navigationButtonMel">
                 <span class="melButton"> <a href="index.html" title="На главную"> мел </a> </span>
             </div>
-            <div class="navigationHeaderButton">
-                <div class="navigationButtonTexts"> <a href="about.html"> Тексты </a></div>
+            <ul class="navigationHeaderButton">
+                <li class="navigationButton  navigationButtonActiv"> <a href="about.html"> Тексты </a></li>
                 
-                <span class="navigationButton"> <a href="about.html"> Афиша </a>
-                </span>
-                <span class="navigationButton"> <a href="about.html"> Книги </a>
-                </span>
-                <span class="navigationButton"> <a href="about.html"> Школы </a>
-                </span>
-            </div>
-            <div class="autorisationHeaderButton">
-                <span class="navigationButton"> <a href="about.html"> <i class="fas fa-search"></i> </a> 
-                </span>
-                <span class="navigationButton"> <a href="req.html"> <i class="fas fa-edit"></i> НАПИСАТЬ В БЛОГ
-                </a></span>
-                <span class="headerButtonExit"> <a href="auth.html"> ВХОД
-                </a> </span>
+                <li class="navigationButton"> <a href="about.html"> Афиша </a>
+                </li>
+                <li class="navigationButton"> <a href="about.html"> Книги </a>
+                </li>
+                <li class="navigationButton"> <a href="about.html"> Школы </a>
+                </li></ul>
+            <ul class="autorisationHeaderButton">
+                <li class="navigationButton navigationButtonSearch"> <a href="about.html"> <i class="fas fa-search"></i> </a> 
+                </li>
+                <li class="navigationButton"> <a href="req.html"> <i class="fas fa-edit"></i> НАПИСАТЬ В БЛОГ
+                </a></li>
+                <li class="navigationButton headerButtonExit"> <a href="auth.html"> ВХОД
+                </a> </li> </ul>
             </div>
         
     </header>
@@ -81,10 +79,10 @@
                 <p class="cardsBlogs"> Блоги
                     <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
                         <div class="articleInfo">
-                            <div class="articleViwes">
-                                <i class="fas fa-clock"></i> Читать: 1 минуту
-                            </div>
-                        </div>
+                           <div class="articleViwes">
+                               <i class="fas fa-clock"></i> Читать: 1 минуту
+                          </div>
+                     </div>
             </article>
             <article>
                 <img src="img/articles/11.png" alt="Изображение" title="Изображение">
@@ -516,24 +514,21 @@
     </div>
     </div>
     <footer>
-
-
         <div id="footerBlock" align="center">
-
-            <div id="footerBlockIn">
-                <h2>Рассылка «Мела»</h2>
-                <br />
-                <form action="" method="post">
-                    <input type="email" class="field" placeholder="Введите свой email" value autocomplete="on"
-                        spellcheck="false">
-                    <a href="about.html" style="margin-left: -30px "> <i class="fas fa-paper-plane"
-                            style="color: #20B2AA"></i>
-                    </a>
-            </div>
+                <div class="melSpend">Рассылка «Мела»</div>
+        <div id="formAction">
+                    <input type="email" class="inputField" placeholder="Введите свой email" value autocomplete="on" spellcheck="false">
+                     <a href="about.html"> <i class="fas fa-paper-plane" ></i>
+                 </a>            
+        </div>
             <div class="formDescription">
                 Мы отправляем нашу интересную и очень полезную рассылку два раза в неделю: во вторник и пятницу
             </div>
+        </div>
+        
+
             <div class="footerInfo">
+            	<div>
                 <div class="footerRubrics">
                     <div class="footerCategories">
                         <a class="footerItems" href="doShkoly.html" data-id="0">
@@ -662,7 +657,8 @@
                         <span class="footerCopyright">© Мел, 2019</span>
                     </div>
                 </div>
+            </div>
+        </div>
+         </body>
     </footer>
-</body>
-
 </html>

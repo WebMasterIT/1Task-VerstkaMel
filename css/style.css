@@ -14,8 +14,7 @@ body {
     height: 100%;
     color: #333;
     background: #f7f7f7;
-    font-size: 1em;
-    font-family: Proxima, sans-serif;
+    font-size: 15px;
     line-height: 100%;
 }
 
@@ -34,67 +33,87 @@ a:hover {
 /*  Selection Block */
  
 header, footer {
-    font-family: 'Merriweather', serif;
-    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #212121;
 } 
 
-header {
+footer {
+    width: 100%;
+    height:  290px;
+    text-align: center;
 
+}
+
+header {
+    
     height: 70px;
     position: relative;
     margin: 0 auto;
-    background: black;
+    
+}
+.navigationButtonSearch {
+    font-size: 20px;
 }
 
 .navigationButton {
+    margin-right: 10px;
+    height: 100%;
     font-weight: 600;
-    font: 14px Proxima,sans-serif;
     padding: 11px; 
 }
 
 .headerButtonExit {
-    font-size: 95%;
-    padding: 10px; 
+    width: 40px;
+    height: 10px;
+    font-weight: bold;
+    font-size: 13px;
     background: #20B2AA;  
     color: #fff;  
-    border-radius: 30px;  
+    border-radius: 20px;  
 }
 
  
 
-.navigationButtonTexts {
+.navigationButtonActiv {
     box-sizing: border-box;
-    padding: 10px; 
-    border-bottom: 3px solid #2FF7D8;
+    border-bottom: 4px solid #2FF7D8;
 }    
     
 
 .headerButtons {
-    vertical-align: baseline;
     display: flex;
     margin-left: 350px;
+    height: 100%;
+    align-items: center;
 }
 
  
 .autorisationHeaderButton {
-    margin-left: 540px;
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 470px;
+    display: flex;
      
 }
 
 .navigationHeaderButton {
-    margin-left: 20px;
-     display: flex;
+
+    line-height: 43px;
+    list-style-type: none;
+    display: flex;
+
 }
 
 .navigationButtonMel {
+    display: flex;
+    align-items: center;
+    height: 100%;
     width: 100px; 
 } 
 
 .melButton {   
-     
-    color: white;
     font-weight: bold;
-    font-size: 50px;  
+    font-size: 45px;  
 }
 
 .articleViwes {
@@ -105,6 +124,7 @@ header {
 }
 
 .articleInfo {
+    opacity: 0.6;
     margin-left: 20px;
     padding: 30px;
     margin-top: 30px;
@@ -115,11 +135,8 @@ header {
 }
 
 a.Menuitem {
-    font-family: Comic Sans MS, sans-serif;
     font-size: 14px;
-    
-     padding: 8px;
-     
+    padding: 8px; 
     color:#0E0101;
     transition:color ease-out .2s
 }
@@ -159,11 +176,12 @@ a.Menuitem {
 }
 
 .menuHrefs {
-    padding-left: 16%;
+
+    padding-left: 300px;
     margin-right: 27px;
     display: inline-block;
     margin-left: 40px;
-    margin-top:30px;  
+    margin-top:25px;  
 }
 
  
@@ -199,14 +217,21 @@ a.Menuitem {
 }
 
     @media (min-width: 700px)  {
-        #wrapper #articles article {
+        {
                  width: 280px; 
                   margin-right: 2%;
 }}
-    @media (max-width: 699px) {
-        #wrapper #articles article {
-              width: 280px;
-              margin-left: 2%; 
+    @media screen and (max-width: 699px) {
+        header, body, #wrapper #articles  {
+              width: 100%;
+              
+               
+}}
+
+@media screen and (max-width: 699px) {
+        .navigationHeaderButton, .autorisationHeaderButton  {
+              display: none;
+               
 }}
 
 #wrapper #articles article img{
@@ -218,25 +243,56 @@ a.Menuitem {
 /* стили для футера */
 
 #footerBlock {
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     color: white;
-    clear: both;
-    padding: 3% 0;
-    margin: 20px 0;
     background: url(../img/background.jpg) center/cover no-repeat ; 
-    height: 200px;
+    height: 290px;
+}
+
+.inputField {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 50px 0 13px;
+    font-size: 15px;
+     
 }
 
 #footerBlockIn {
-    line-height: 25px;
-    width: 470px;
+    height: 37px; 
+    margin-bottom: 20px;
+    line-height: 37px;
+    padding-top: 60px;
+}
+
+#formAction {
+    display: block;
+    width: 420px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.formaAction a {
+    margin-left: -30px;
+    color: #20B2AA;
 }
 
 .formDescription {
-    margin-bottom: 110px;
-    width: 430px;
-    font: 14px/20px Proxima,sans-serif;
+    width: 420px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 17px;
     opacity: .8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formIcon {
+    width: 32px;
+    height: 32px;
+ 
 }
 
 form {height: 40px;
@@ -263,7 +319,6 @@ input:focus {
     border-radius: 23px;
     font-size: 17px;
     padding: 0 42px;
-    font-family: Monserat, sans-serif;
     color: #FFF;
     background-color: #47B3AC;
     margin-bottom: 25px;
@@ -272,16 +327,21 @@ input:focus {
 
  
 .footerInfo {
-    min-height: 300px;  
-    padding: 30px;
-    text-align: center;
-    background-color: #1C1C1C;  
+    padding: 55px 40px 56px;
+    background-color: #1C1C1C;
+}
+
+.melSpend {
+        font-size: 30px;
+        line-height: 37px;
+        height: 37px;
+        margin-bottom: 20px;
+        padding-top: 66px;
 }
 
 .footerRubrics {
-    font-size: 95%;
+    font-size: 15px;
     font-weight:bold;
-    margin: 10px;
     margin-bottom: 27px;
 }
 
@@ -297,7 +357,6 @@ input:focus {
 }
 
 .footerLinks {
-    font-family:  Arial,sans-serif;
     font-size: 14px;
     max-width: 670px;
     margin: 0 auto 31px;
@@ -320,7 +379,6 @@ input:focus {
 
 .footerCopyright {
     margin-top: 17px;
-    font: 14px/24px roboto-regular,Arial,sans-serif;
     display: inline-block;
     color: #fff;
 }
@@ -337,7 +395,6 @@ input:focus {
 .footerSocial {
     margin-top: 20px;
     display: inline-block;
-    /*margin-right:  25px;*/
     margin-left: 25px;
     font-size: 23px;
     margin-bottom: 35px;
